@@ -2,7 +2,8 @@ import { useEffect } from "react";
 
 const App = () => {
     useEffect(() => {
-        const socket = new WebSocket('ws://localhost:3000')
+        // const socket = new WebSocket('ws://localhost:3000')
+        const socket = new WebSocket('ws://localhost:3001')
 
         socket.addEventListener('open', (event) => {
             console.log('WebSocket connection opened')
